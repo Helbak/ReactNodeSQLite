@@ -1,5 +1,9 @@
 import React from 'react';
 import styles from './app.css';
+import Header from './reactComponents/header/Header.js';
+import MainHeader from './reactComponents/mainHeader/MainHeader.js';
+import MainBody from './reactComponents/mainBody/MainBody.js';
+import MainFooter from './reactComponents/mainFooter/MainFooter.js';
 
 export default class App extends React.Component {
   constructor() {
@@ -16,8 +20,9 @@ export default class App extends React.Component {
   render() {
     return (
       <div className={styles.app}>
-        <p>{ this.state.count }yoohoo</p>
-        <button onClick={() => this.increment()}>Increment</button>
+       <MainHeader/>
+       <MainBody/>
+       <MainFooter/>
       </div>
     )
   }

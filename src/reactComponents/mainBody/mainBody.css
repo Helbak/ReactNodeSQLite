@@ -1,0 +1,364 @@
+.mainBody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.loveApp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1047px;
+    width: 100%;
+    background: #E5E5E5;
+}
+.affordable {
+    display: flex;
+    flex-direction: column;
+    height: 1005px;
+    width: 100%;
+    background: #E5E5E5;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    width: 580px;
+    height: 78px;
+    margin-top: 16px;
+    white-space: pre-line;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 39px;
+text-align: center;
+
+color: #1A1A1A;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 580px;
+    height: 56px;
+    margin-top: 24px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 142%;
+    /* or 28px */
+
+    text-align: center;
+
+    color: #7E7E7E;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 501px;
+    background: #E5E5E5;
+}
+.square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    width: 380px;
+    height: 323px;
+    margin-right: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 32px;
+}
+.picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 106px;
+    height: 96px;
+    margin-top: 48px;
+}
+.shape {
+    display: flex;
+    width: 55px;
+    height: 55px;
+    /* background: #FFFFFF; */
+}
+.titleSquare {
+    width: 165px;
+    height: 29px;
+    margin-top: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #1A1A1A;
+}
+.textSquare {
+    display: flex;
+    flex-direction: column;
+    width: 316px;
+    height: 46px;
+    margin-top: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 142%;
+    text-align: center;
+    color: #7E7E7E;
+}
+.start {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 429px;
+    background-image: linear-gradient(bottom, #255D8B, #3A80BA 93%, transparent 93%, transparent 100%);
+    background-image: -webkit-linear-gradient(bottom, #255D8B, #3A80BA 93%, transparent 93%, transparent 100%)
+}
+.startLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex: 1;
+}
+.startRight {
+display: flex;
+flex-direction: column;
+height: 100%;
+flex: 1;
+}
+.screen {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+width: 524px;
+height: 360px;
+background: linear-gradient(135.04deg, #FFFFFF 1.29%, #D0D0D0 80.1%);
+border-radius: 22px;
+}
+.screenPage {
+    width: 487px;
+    height: 323px;
+}
+.baseShadow {
+    width: 563px;
+    height: 42px;
+}
+.startTitle {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: 78px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+.startText {
+    margin-top: 16px;
+    width: 480px;
+    height: 69px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 142%;
+    color: #FFFFFF;
+}
+.wrapStartBtn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    width: 480px;
+}
+.startBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 221px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 142%;
+text-align: center;
+color: #255D8C;
+}
+.wrapAffordable {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1004px;
+    width: 100%;
+    background: #E5E5E5;
+}
+.affordable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 58px;
+    height: 908px;
+    width: 100%;
+    background-color: #E5E5E5;
+    background-position: top right;
+    background-repeat: repeat-y;
+}
+.affordableTitle {
+    display: flex;
+    flex-direction: column;
+    width: 580px;
+    height: 78px;
+    font-family: Montserrat;
+    font-style: normal;
+    /* font-weight: bold; */
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #1A1A1A;
+}
+.affordableText {
+display: flex;
+flex-direction: column;
+margin-top: 24px;
+width: 664px;
+height: 56px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 142%;
+/* or 28px */
+text-align: center;
+color: #7E7E7E;
+}
+.affordableMenu {
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-top: 32px;
+width: 100%;
+height: 627px;
+}
+.affordableOption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 380px;
+    height: 627px;
+    margin-left: 17px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 32px;
+}
+.optionTitle {
+    width: 123px;
+    height: 29px;
+    margin-top: 32px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #1A1A1A;
+}
+.optionImg {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 210px;
+height: 122px;
+margin-top: 19px;
+}
+.optionPrice {
+    width: 132px;
+    height: 68px;
+    margin-top: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    color: #1A1A1A;
+}
+.optionPrice:hover {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 68px;
+    text-align: center;
+    color: #3A80BA;
+}
+.optionText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 250px;
+    height: 206px;
+    margin-top: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 162%;
+    text-align: center;
+    border-top: 1px solid #7E7E7E;
+    color: #7E7E7E;
+}
+.optionBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+width: 220px;
+height: 56px;
+margin-top: 24px;
+background: #3A80BA;
+border-radius: 8px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 142%;
+text-align: center;
+color: #FFFFFF;
+}
+.affordableFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 664px;
+    height: 28px;
+    margin-top: 32px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 142%;
+    text-align: center;
+    color: #7E7E7E;
+}
+.contact {
+    color: #3A80BA;
+    margin-left: 6px;
+}
