@@ -1,10 +1,17 @@
 const express = require("express");
 const app = express();
-app.use(express.static("dist"));
-// app.use(express.static("src"));
-console.log('Listening on port: 3000 ')
-app.get("/", function(request, response){
-        response.sendFile("index.html", { root: __dirname });
-});
+const service = new (require('./backend/services/service'));
 
-app.listen(3000);
+//  async () => {
+//         console.log('000000000000000000  await service.accessData();')
+service.prepareData()
+//        service.prepareData();
+// };
+
+
+// app.use(express.static("dist"));
+// console.log('Listening on port: 3000 ')
+// app.get("/", function (request, response) {
+//         response.sendFile("index.html", { root: __dirname });
+// });
+// app.listen(3000);
