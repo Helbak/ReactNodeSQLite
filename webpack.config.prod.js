@@ -7,6 +7,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './src/index.js',
   output: {
+    publicPath: '/',
     path: path.join(__dirname, 'dist'),
     filename: 'javascripts-[hash].js'
   },
@@ -29,6 +30,9 @@ module.exports = {
       inject: 'body',
     })
   ],
+  devServer: {
+    historyApiFallback: true
+  },
   module: {
     loaders: [{
       test: /\.js$/,

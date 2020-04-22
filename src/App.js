@@ -1,5 +1,8 @@
 import React from 'react';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import styles from './app.css';
+import Main from './pages/Main'
+import PageNotFound from './pages/Notfound'
 import Header from './reactComponents/header/Header.js';
 import MainHeader from './reactComponents/mainHeader/MainHeader.js';
 import MainBody from './reactComponents/mainBody/MainBody.js';
@@ -20,9 +23,12 @@ export default class App extends React.Component {
   render() {
     return (
       <div className={styles.app}>
-       <MainHeader/>
-       <MainBody/>
-       <MainFooter/>
+        <Switch>
+          <Route path="/" exact component={Main} />
+          <Route path="/head" component={MainBody} />
+          {/* <Route component={PageNotFound} /> */}
+          <Redirect to="/" />
+        </Switch>
       </div>
     )
   }

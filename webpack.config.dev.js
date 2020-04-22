@@ -22,6 +22,9 @@ module.exports = {
       inject: 'body',
     })
   ],
+  devServer: {
+    historyApiFallback: true
+  },
   module: {
     loaders: [{
       test: /\.js$/,

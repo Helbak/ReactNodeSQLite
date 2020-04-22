@@ -14,11 +14,9 @@ const service = new (require('./backend/services/service'));
 };
 prepareData();
 
-
-
 app.use(express.static("dist"));
 console.log('Listening on port: 3000 ')
-app.get("/", function (request, response) {
+app.get("/*", function (request, response) {
         response.sendFile("index.html", { root: __dirname });
 });
 app.post('/users', service.getUserList);
