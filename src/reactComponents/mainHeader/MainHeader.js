@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import styles from './mainHeader.css';
 
 
@@ -17,9 +18,9 @@ const MainHeader = props => (
         <span className={styles.text}>
         Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!
         </span>
-        <button className={styles.viewStats}>
-        View Stats
-        </button>
+        <NavLink to="/users" className={styles.viewStats} style={{ textDecoration: 'none' }} >
+          <span  className={styles.viewStatsTitle}>View Stats</span>
+        </NavLink>
       </div>
       <div className={styles.mainHeaderRight}>
       <div className={styles.wrapPhone}>
