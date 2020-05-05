@@ -1,0 +1,59 @@
+.frameRows {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #FBFBFB;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+color: #1A1A1A;
+}
+.rows {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 32px;
+}
+.rowId {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+    border-top-left-radius: 8px;
+    border: 1px solid #FFFFFF;
+}
+.rowFour {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 4;
+    flex-wrap: wrap;
+    border: 1px solid #FFFFFF;
+}
+.rowThree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 3;
+    flex-wrap: wrap;
+    border: 1px solid #FFFFFF;
+}
+.rowSix {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 6;
+    flex-wrap: wrap;
+    border-top-right-radius: 8px;
+    border: 1px solid #FFFFFF;
+}
+.rowEight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 8;
+    flex-wrap: wrap;
+    border: 1px solid #FFFFFF;
+}

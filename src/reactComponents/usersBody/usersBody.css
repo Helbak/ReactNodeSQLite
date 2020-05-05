@@ -1,0 +1,149 @@
+.usersBody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 740px;
+    background: #E5E5E5;
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    margin-left: 130px;
+    margin-top: 16px;
+}
+.prevPage {
+    display: flex;
+    justify-content: start;
+    width: 85px;
+    height: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #CCCCCC;
+}
+.arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 8px;
+    width: 8px;
+    height: 20px;
+    color: #CCCCCC;
+}
+.actualPage {
+    display: flex;
+    justify-content: center;
+    width: 105px;
+    height: 20px;
+    margin-left: 8px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3A80BA;
+}
+.title {
+    display: flex;
+    width: 253px;
+    height: 39px;
+    margin-left: 130px;
+    margin-top: 24px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    color: #1A1A1A;
+}
+.table {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    margin-left: 130px;
+    width: 75%;
+  }
+.tableHeader {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 48px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background: #3A80BA;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+color: #FFFFFF;
+}
+.headerId {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+    border-top-left-radius: 8px;
+    border: 1px solid #FFFFFF;
+}
+.headerFour {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 4;
+    border: 1px solid #FFFFFF;
+}
+.headerThree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 3;
+    border: 1px solid #FFFFFF;
+}
+.headerSix {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 6;
+    border-top-right-radius: 8px;
+    border: 1px solid #FFFFFF;
+}
+.headerEight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 8;
+    border: 1px solid #FFFFFF;
+}
+.toggle {
+    display: flex;
+   flex-direction: row;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.toggleBtn {
+    display: flex;
+   flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 2px solid #F1F1F1;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+color: #1A1A1A;
+}
+.toggleArrow {
+     width: 48px;
+     height: 48px;
+     background-repeat: no-repeat;
+     background-position: center;
+}

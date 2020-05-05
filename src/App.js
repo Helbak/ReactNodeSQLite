@@ -10,12 +10,19 @@ export default class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      users: [{users: null}],
-      test: 'test'
+      users: [{ users: null, id: 0 }],
+      tablePage: 1
     };
   };
 
-  getUsers(between) {
+  setTablepage(page) {
+    this.setState({ tablePage: page });
+    const to = page * 50;
+    const from = to - 49;
+    this.getUsers({ "from": from, "to": to });
+  };
+
+  getUsers(between = { "from": 1, "to": 5 }) {
     axios
       .post('http://localhost:3000/users', between)
       .then(response => this.setState({ users: response.data }))
@@ -25,48 +32,21 @@ export default class App extends React.Component {
       });
   };
 
-  findInArray(array, object) {
-    for (let i = 0; i < array.length; i++) {
-      if (array[i].id === object.id) return true;
-    }
-    return false;
+  componentDidMount() {
+    this.getUsers({ "from": 1, "to": 49 });
   };
 
-  completeUsers() {
-    const crude = this.state.crudeUsers;
-    const completed = [];
-    for (let i = 0; i < crude.length; i++) {
-      if (!this.findInArray(completed, crude[i])) {
-        completed.push(crude[i]);
-      }
-    };
-    for(let i=0; i<completed.length; i++){
-      const arrayIds = crude.filter(object => object.id === completed[i].id);
-      let sum = 0;
-      arrayIds.forEach(object => {sum = sum + object.clicks});
-      completed[i].totalClicks = sum;
-    }
-    this.setState({ completedUsers: completed })
-  };
-
-
-setUsers(between = { "from": 1, "to": 5 }) {
-  this.getUsers(between);
-  this.completeUsers();
-};
-
-render() {
-  return (
-    <div className={styles.app}>
-      <p>{JSON.stringify(this.state.users)}</p>
-      <button onClick={() => this.setUsers()}>setData</button>
-      <Switch>
-        <Route path="/" exact component={MainPage} />
-        <Route path="/users" component={UsersPage} />
-        {/* <Route component={PageNotFound} /> */}
-        <Redirect to="/" />
-      </Switch>
-    </div>
-  )
-}
+  render() {
+    return (
+      <div className={styles.app}>
+        <p>{this.state.tablePage}</p>
+        <Switch>
+          <Route path="/" exact component={MainPage} />
+          <Route path="/users" component={() => <UsersPage users={this.state.users} setTablepage={this.setTablepage.bind(this)} />} />
+          {/* <Route component={PageNotFound} /> */}
+          <Redirect to="/" />
+        </Switch>
+      </div>
+    )
+  }
 }

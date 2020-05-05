@@ -5,6 +5,7 @@ import styles from './footer.css';
 
 const Footer = props => (
     <div className={styles.footer} >
+        <div className={styles.frame} >
         <div className={styles.left} >
         <NavLink to="/" className={styles.logo} style={{ textDecoration: 'none' }} >AppCo</NavLink>
         </div>
@@ -14,6 +15,8 @@ const Footer = props => (
         <div className={styles.right} >
         <div className={styles.copy} >Copyrights © 2019.</div>
         </div>
+        </div>
+
     </div>
 );
 export default Footer;

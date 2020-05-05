@@ -5,6 +5,7 @@ import MainBody from '../reactComponents/mainBody/MainBody.js';
 import MainFooter from '../reactComponents/mainFooter/MainFooter.js';
 
 
+
 const Main = () => (
     <Fragment>
         <MainHeader />
