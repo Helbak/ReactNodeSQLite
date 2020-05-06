@@ -4,6 +4,7 @@ import axios from 'axios';
 import styles from './app.css';
 import MainPage from './pages/MainPage';
 import UsersPage from './pages/UsersPage';
+import ChartPage from './pages/ChartPage';
 
 
 export default class App extends React.Component {
@@ -11,8 +12,13 @@ export default class App extends React.Component {
     super();
     this.state = {
       users: [{ users: null, id: 0 }],
-      tablePage: 1
+      tablePage: 1,
+      userId: 1
     };
+  };
+
+  setUserId(id) {
+    this.setState({ userId: id });
   };
 
   setTablepage(page) {
@@ -39,10 +45,15 @@ export default class App extends React.Component {
   render() {
     return (
       <div className={styles.app}>
-        <p>{this.state.tablePage}</p>
         <Switch>
           <Route path="/" exact component={MainPage} />
-          <Route path="/users" component={() => <UsersPage users={this.state.users} setTablepage={this.setTablepage.bind(this)} />} />
+          <Route path="/users" component={() =>
+          <UsersPage
+          users={this.state.users}
+          setTablepage={this.setTablepage.bind(this)}
+          setUserId={this.setUserId.bind(this)}
+          />} />
+          <Route path="/usercharts" component={() => <ChartPage userId={this.state.userId} />} />
           {/* <Route component={PageNotFound} /> */}
           <Redirect to="/" />
         </Switch>

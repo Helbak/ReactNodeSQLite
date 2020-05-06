@@ -4,7 +4,7 @@ import styles from './usersBody.css';
 import TableRows from '../tableRows/TableRows.js';
 
 
-const UsersBody = ({ users, setTablepage }) => (
+const UsersBody = ({ users, setTablepage, setUserId }) => (
 
   <div className={styles.usersBody} >
 
@@ -25,17 +25,17 @@ const UsersBody = ({ users, setTablepage }) => (
         <div className={styles.headerFour} > Total clicks </div>
         <div className={styles.headerSix} > Total page views </div>
       </div>
-      <TableRows users={users} setTablepage={setTablepage} />
+      <TableRows users={users} setTablepage={setTablepage} setUserId={setUserId}/>
     </div>
     <div className={styles.toggle} >
-      <button className={styles.toggleArrow} style={{ backgroundImage: `url(${'images/GreyBack.png'})` }}></button>
-      <button className={styles.toggleBtn} onClick={() => setTablepage(1)} > 1 </button>
-      <button className={styles.toggleBtn} onClick={() => setTablepage(2)} > 2 </button>
-      <button className={styles.toggleBtn} onClick={() => setTablepage(3)} > 3 </button>
-      <button className={styles.toggleBtn} onClick={() => setTablepage(4)} > 4 </button>
-      <button className={styles.toggleBtn} onClick={() => setTablepage(5)} > 5 </button>
+      <div className={styles.toggleArrow} style={{ backgroundImage: `url(${'images/GreyBack.png'})` }}></div>
+      <div className={styles.toggleBtn} onClick={() => setTablepage(1)} > 1 </div>
+      <div className={styles.toggleBtn} onClick={() => setTablepage(2)} > 2 </div>
+      <div className={styles.toggleBtn} onClick={() => setTablepage(3)} > 3 </div>
+      <div className={styles.toggleBtn} onClick={() => setTablepage(4)} > 4 </div>
+      <div className={styles.toggleBtn} onClick={() => setTablepage(5)} > 5 </div>
 
-      <button className={styles.toggleArrow} style={{ backgroundImage: `url(${'images/BlueAhead.png'})` }}></button>
+      <div className={styles.toggleArrow} style={{ backgroundImage: `url(${'images/BlueAhead.png'})` }}></div>
     </div>
   </div>
 );

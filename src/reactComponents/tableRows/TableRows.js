@@ -3,10 +3,10 @@ import { NavLink } from 'react-router-dom';
 import styles from './tableRows.css';
 
 
-const TableRows = ({ users }) => (
+const TableRows = ({ users, setUserId }) => (
   <div className={styles.frameRows}>
        {users.map(item => (
-      <NavLink to="/" className={styles.rows} style={{ textDecoration: 'none' }} >
+      <NavLink to={`/usercharts/:${item.id}`} className={styles.rows} onClick={() => setUserId(item.id)} style={{ textDecoration: 'none' }} >
         <div className={styles.rowId} > {item.id} </div>
         <div className={styles.rowFour} > {item.first_name} </div>
         <div className={styles.rowFour} > {item.last_name} </div>

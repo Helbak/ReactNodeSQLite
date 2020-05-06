@@ -1,15 +1,18 @@
 import React from 'react';
 import { Fragment } from 'react';
 import Header from '../reactComponents/header/Header.js';
-import UsersBody from '../reactComponents/usersBody/UsersBody.js';
+// import UsersBody from '../reactComponents/usersBody/UsersBody.js';
 import Footer from '../reactComponents/footer/Footer.js';
 
 
-const Users = ({users, setTablepage, setUserId}) => (
+const ChartPage = ({userId}) => (
     <Fragment>
         <Header />
-        <UsersBody users={users} setTablepage={setTablepage} setUserId={setUserId}/>
+        <div>userId = {userId}</div>
         <Footer />
      </Fragment>
 );
-export default Users;
+export default ChartPage;
+
+
+
